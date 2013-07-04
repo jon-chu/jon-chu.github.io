@@ -1,0 +1,21 @@
+---
+layout: default
+title: Research
+---
+
+<div id="home">
+  <h1>Research</h1>
+  <ul class="posts">
+    {% for post in site.categories.research %}
+      <li class>
+      	<span>{{ post.date | date_to_string }}</span> &raquo; 
+      	<a href="{{ post.link }}">{{ post.title }}</a>
+      	<br>
+        <div class="section">
+        	{{post.content}}
+        </div>
+      </li>
+      	
+    {% endfor %}
+  </ul>
+</div>

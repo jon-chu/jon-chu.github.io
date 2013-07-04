@@ -1,0 +1,155 @@
+/*****************************************************************************/
+/*
+/* Common
+/*
+/*****************************************************************************/
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body { height: 100%; }
+
+body {
+  background-color: #FFF;
+  font-family: 'Average', serif;
+  font-size: small;
+}
+
+a {
+  text-decoration: none;
+  color: #8C1515;;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul.posts li {
+  padding-bottom: 15px;
+}
+
+.container {
+  height: 100px;
+  width: 65%;
+  margin: auto;
+  min-width: 600px;
+  vertical-align: baseline;
+}
+
+.title {
+  margin-left: 20px;
+  position: relative;
+  top: -15px;
+}
+
+.container div {
+  margin: 10px 45px;
+}
+
+.container div h1 {
+  color: #7C7C7C;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.container h2 {
+  color: #7C7C7C;
+  margin-left: 60px;
+  margin-bottom: 10px;
+}
+
+.section {
+  position: relative;
+  left: -15px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  margin-bottom: 25px;
+  border-left: 5px solid #8C1515;
+}
+
+h1.title a {
+  color: #8C1515;
+}
+
+h2 {
+  float: left;
+}
+
+nav a {
+  color: #898989;
+  padding-bottom: 5px;
+  margin-right: 20px;
+}
+nav a:hover {
+  border-bottom: 1px solid #898989;
+}
+nav a.active {
+  color: #8C1515;
+  border-bottom: 1px solid #8C1515;
+}
+
+.container .header {
+  margin: 45px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #cecece;
+}
+
+.clear {
+  clear: both;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.content {
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  top: 100px;
+}
+
+/*****************************************************************************/
+/*
+/* Posts
+/*
+/*****************************************************************************/
+
+/* standard */
+.post pre {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  padding: 0 .4em;
+}
+
+.post ul, .post ol {
+  margin-left: 1.35em;
+}
+
+.post code {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  padding: 0 .2em;
+}
+
+.post pre code {
+  border: none;
+}
+
+/* terminal */
+.post pre.terminal {
+  border: 1px solid #000;
+  background-color: #333;
+  color: #FFF;
+}
+
+.post pre.terminal code {
+  background-color: #333;
+}
