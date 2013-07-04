@@ -1,2 +1,3 @@
 name: jonathan chu
 pygments: true
+dirs: ['CV', 'Research', 'Teaching']

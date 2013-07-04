@@ -9,11 +9,12 @@ title: Research
     {% for post in site.categories.research %}
       <li class>
       	<span>{{ post.date | date_to_string }}</span> &raquo; 
-      	<a href="{{ post.link }}">{{ post.title }}</a>
+      	<a href="{{ post.url }}">{{ post.title }}</a>
       	<br>
         <div class="section">
         	{{post.content}}
         </div>
+        <a href="{{post.link}}" class="pdf pull-right">PDF</a>
       </li>
       	
     {% endfor %}
