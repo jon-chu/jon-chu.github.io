@@ -24,13 +24,12 @@
                 {% if page.title == "About" %}
                   class="active"
                 {% endif %}
-                >About
-              </a>
+              >About</a>
               {% for dir in site.dirs %}
                 {% if dir == page.title %}
-                  <a href="/{{dir}}/" class="active">{{dir}}</a>
+                  <a href="/{{ dir | downcase }}/" class="active">{{dir}}</a>
                 {% else %}
-                  <a href="/{{dir}}/">{{dir}}</a>
+                  <a href="/{{ dir | downcase }}/">{{dir}}</a>
                 {% endif %}
               {% endfor %}
             <nav>
